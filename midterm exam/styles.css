@@ -1,0 +1,133 @@
+* { scroll-behavior: smooth;
+}
+body {
+ font-family:sans-serif;
+ background-color:black;
+ background-image: url('https://media.istockphoto.com/id/187484756/photo/seascape-view.jpg?s=612x612&w=0&k=20&c=fI3uZxPCiiRfrA-5WQX3miPOmsxHE5TbARpsPzrZU4U=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover
+}
+h1 {
+font-family: 'Recursive',monospace;
+text-align: right;
+font-size:2.8em;
+background-color:transparent;
+color:black;
+padding: 30px; 
+border:1px solid white;
+}
+p {    
+    color: #F0FFF0; 
+    line-height: 2.0; 
+    text-align: center;
+    padding: 150px;
+    font-size: 20px;
+    bottom: 50px;
+    font-family: 'Recursive',monospace;
+    bottom:-170px;
+
+
+}
+h2{
+ color: black;
+ text-align: center;
+ bottom:50px;
+ font-size:2.1em;
+ position: relative;
+  bottom: -20px;
+}
+.responsive-section {
+
+}
+div. image1>
+ padding: 100px;
+ margin: 0px;
+ float: left;s
+ margin-right: auto;
+ width: 50%;
+ border-radius:20%;
+ border: 2px solid white;
+
+
+}
+
+div.image1:hover {
+padding: 10px: 50px;
+dispaly: inline-block;
+margin: 5px;
+border: 5px solid #ccc;
+float: left;
+width: 20px
+}
+
+div.image1:hover {
+  padding: 10px 20px;
+  border: 3px solid #777;
+  transition: background-color 0.5s ease;
+}
+.responsive-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.image1 {
+width: 100%;
+height: auto;
+}
+div.desc {
+ padding: 15px;
+ text-align: center;
+ color: white;
+}
+
+.contact{
+padding: 10px 20px;
+border: 5px solid black;
+color: #black;
+transition: background-color 0.5s ease;
+font-weight: bold;
+height: 150px;
+
+  
+}
+.navbar a {
+ font-size:18px;
+ color:white;
+ text-decoration:none;
+ margin-left:35px;
+ transition:.3s;
+ position: relative;
+ bottom: -105px;
+}
+
+/* Add the new CSS rule for adjusting image size and hover effect */
+.project img {
+  max-width: 15%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally within its container */
+  border: 3px solid #000; /* Add a 3px solid black border to each image */
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* Apply hover effect */
+.project img:hover {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+  border-color: #fff; /* Change border color on hover */
+}
+
+/* Add the new CSS rule for adjusting image size */
+.project img {
+  max-width: 5%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally within its container */
+  border: 3px solid #000; /* Add a 3px solid black border to each image *
+
+.navbar a:hover,
+.navbar a.active {
+color:aqua;

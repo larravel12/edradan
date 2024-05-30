@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="index.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Cursive', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe6f2;
+      color: #343a40;
+    }
+
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-fluid {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 30px;
+      border: 3px solid #ffcce6;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.05);
+      border-color: #ff99cc;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .pagination {
+      margin-top: 30px;
+      justify-content: center;
+    }
+
+    .pagination .page-item {
+      margin: 0 5px;
+    }
+
+    .pagination .page-link {
+      color: #ff66b2;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .pagination .page-link:hover {
+      background-color: #ffe6f2;
+      border-color: #ff66b2;
+    }
+
+    .pagination .active .page-link {
+      background-color: #ff66b2;
+      border-color: #ff66b2;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pagination .disabled .page-link {
+      color: #6c757d;
+      pointer-events: none;
+    }
+
+    .page-item {
+      margin: 0 3px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #ff66b2;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #ff99cc;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ff66b2;
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>My Favorite Puppies</h1>
+    <p>Browse through my collection of adorable puppy images.</p>
+  </div>
+  
+  <div class="row" id="imageContainer">
+    <!-- Images will be dynamically loaded here based on pagination -->
+  </div>
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination" id="paginationContainer">
+      <!-- Pagination links will be dynamically generated here -->
+    </ul>
+  </nav>
+</div>
+
+<script>
+  // Define your images array
+  const images = [
+    'https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445',
+    'https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel-standing-in-the-grass.jpg',
+    'https://nativepet.com/cdn/shop/articles/Pug-puppy-standing-on-a-bed_x1000.jpg?v=1667820606',
+    'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2013/May/130522/6C7536084-g-hlt-120105-puppy-423p.jpg',
+    'https://www.pdsa.org.uk/media/7646/golden-retriever-gallery-2.jpg?anchor=center&mode=crop&quality=100&height=500&bgcolor=fff&rnd=133020229510000000',
+    'https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Pomeranian.jpg?itok=BGe-1DFz',
+    'https://cdn.fotofits.com/petzlover/gallery/img/l/pomeranian-887850.jpg',
+    'https://th.bing.com/th/id/R.26ab931a8dc4081da4ce0edcc22deeb1?rik=HWfanOA6qpF5DQ&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f43100000%2fcute-puppy-dogs-43117550-736-736.jpg&ehk=oNvFFrAXwIytGZL5SPx0V95EWpHGAi48IJelRlOuKMo%3d&risl=&pid=ImgRaw&r=0'
+    // Add more image URLs as needed
+  ];
+
+  // Number of images per page
+  const imagesPerPage = 4;
+
+  // Function to display images for a given page
+  function displayImages(page) {
+    const startIndex = (page - 1) * imagesPerPage;
+    const endIndex = startIndex + imagesPerPage;
+    const container = document.getElementById('imageContainer');
+    container.innerHTML = '';
+    for (let i = startIndex; i < endIndex && i < images.length; i++) {
+      const colDiv = document.createElement('div');
+      colDiv.className = 'col-sm-6 col-md-4 col-lg-3';
+      const img = document.createElement('img');
+      img.src = images[i];
+      img.alt = `Image ${i + 1}`;
+      img.className = 'img-fluid';
+      colDiv.appendChild(img);
+      container.appendChild(colDiv);
+    }
+  }
+
+  // Function to generate pagination links
+  function generatePagination() {
+    const totalPages = Math.ceil(images.length / imagesPerPage);
+    const paginationContainer = document.getElementById('paginationContainer');
+    paginationContainer.innerHTML = '';
+    for (let i = 1; i <= totalPages; i++) {
+      const li = document.createElement('li');
+      li.className = 'page-item';
+      const link = document.createElement('a');
+      link.className = 'page-link';
+      link.href = '#';
+      link.textContent = i;
+      link.addEventListener('click', () => {
+        displayImages(i);
+        const activeLink = document.querySelector('.pagination .active');
+        if (activeLink) {
+          activeLink.classList.remove('active');
+        }
+        li.classList.add('active');
+      });
+      li.appendChild(link);
+      paginationContainer.appendChild(li);
+    }
+    paginationContainer.firstChild.classList.add('active');
+  }
+
+  // Display initial images and pagination
+  displayImages(1);
+  generatePagination();
+</script>
+
+</body>
+</html>

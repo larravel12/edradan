@@ -1,0 +1,34 @@
+/* Styles for the body element */
+body {
+   font-family: 'Arial',sans-serif;
+   margin: 40px;
+   background-color: brown;
+}
+
+/* Styling for all h1 elements */
+h1 {
+ color: indigo;
+ text-align: center;
+ font-size: 40px; 
+
+}
+/* Paragraph styling */
+p {
+ color: blue;
+ line-height: 2.5;
+ font-size: 40px; 
+}
+/* Styling a div with the class "styled-box" */
+.styled-box {
+ background-color: gray;
+ padding: 40px;
+ margin-top: 40px;
+ text-align: center;
+ font-size: 40px; 
+}
+/* Styling an element with the ID "unique-text" */
+#unique-text {
+ color: blue;
+ font-weight: bold;
+ font-size: 40px; 
+}

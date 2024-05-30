@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<style>
+  body {
+    font-family: 'Cursive', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe6f2;
+    color: #343a40;
+  }
+
+  .container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    border: 3px solid #ffcce6;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.05);
+    border-color: #ff99cc;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .pagination {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .pagination .page-item {
+    margin: 0 5px;
+  }
+
+  .pagination .page-link {
+    color: #ff66b2;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .pagination .page-link:hover {
+    background-color: #ffe6f2;
+    border-color: #ff66b2;
+  }
+
+  .pagination .active .page-link {
+    background-color: #ff66b2;
+    border-color: #ff66b2;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .pagination .disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+  }
+
+  .page-item {
+    margin: 0 3px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 2.5em;
+    color: #ff66b2;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    font-size: 1.2em;
+    color: #ff99cc;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ff66b2;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#chart" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Chart</span></a></li>
+        <li><a href="#table" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Table</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center" style="background-image: url('http://3.bp.blogspot.com/-EllVvBOdcTE/URIhsqGMPDI/AAAAAAAAKK8/QRMPUr3C3oc/s1600/Sunset+from+see.jpg');">
+  <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <h1>Larra Vel Edradan</h1>
+    <p>I'm an <span class="typed" data-typed-items="IT student"></span></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/e.larravel" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Fe.larravel%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2HQtyUsdwft22rMZM-Qf281XoIFpyMG7MDO5QPQrtAmJshPqFbNAZ9xAg_aem_AVi90MRJ9OQU9K9dAuLWB8ookfpGkpm-6mpxijkgp-fMuvBBl9NLTWmIHX0vmEtAZZzJYKknjtQS3drJuGk8uvyw&h=AT0n5-DavoCaS79BURVUrSHmDU1JfZrUOsqjlEhxyJThuFNsDZs3_Iq8jN3m377yMUzuCn51onrrEGIunb-Ad1gYqCyom99BnTQYB2lI7LiXLSvxWUDdY2smI5NgCKy86-J9fBan_QcIuIyu" class="instagram"><i class="bx bxl-instagram"></i></a>
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>This is my portfolio. I'm Larra Vel Edradan, an 18 years old enthusiast eager to dive deeper into the realm of technology and innovation.
+ </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/384116813_1662422924265119_3609782084225577589_n.jpg?stp=dst-jpg_s206x206&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH7gso08MaGuNs1hBtMGFWXILCFAufoGrkgsIUC5-gaubokhYRPzrSkAgBVcFgZruLD4t2eZAxMcpfcmANI9jKd&_nc_ohc=a5Ve_oiY3b0Q7kNvgEzt3Ik&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG899VtXEb-bLGsyO3HXS0Y124_ga3qPFw5yE3kAnxE2Q&oe=667F75A2">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>IT Student</h3>
+            <p class="fst-italic">
+              About Me
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 October 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Facebook:</strong> <span>Larra Edradan</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>09121998909</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Surigao City, Philippines</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Year:</strong> <span>1st Year</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>edradanlarra@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+As a first-year IT student with a keen interest in technology. I'm excited to delve into the world of information technology, where I aim to learn everything from coding to cybersecurity. Outside of classes, I enjoy exploring new tech gadgets and following online tutorials to enhance my skills. My ultimate goal is to leverage my knowledge to make a positive impact in the tech industry and beyond. Join me on this journey as I navigate through the exciting challenges and opportunities that IT has to offer!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!--Images Start-->>
+    <div class="container">
+      <div class="header">
+        <h1>My Favorite Puppies</h1>
+        <p>Browse through my collection of adorable puppy images.</p>
+      </div>
+      
+      <div class="row" id="imageContainer">
+        <!-- Images will be dynamically loaded here based on pagination -->
+      </div>
+    
+      <nav aria-label="Page navigation">
+        <ul class="pagination" id="paginationContainer">
+          <!-- Pagination links will be dynamically generated here -->
+        </ul>
+      </nav>
+    </div>
+
+
+    <script>
+      // Define your images array
+      const images = [
+        'https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445',
+        'https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel-standing-in-the-grass.jpg',
+        'https://nativepet.com/cdn/shop/articles/Pug-puppy-standing-on-a-bed_x1000.jpg?v=1667820606',
+        'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2013/May/130522/6C7536084-g-hlt-120105-puppy-423p.jpg',
+        'https://www.pdsa.org.uk/media/7646/golden-retriever-gallery-2.jpg?anchor=center&mode=crop&quality=100&height=500&bgcolor=fff&rnd=133020229510000000',
+        'https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Pomeranian.jpg?itok=BGe-1DFz',
+        'https://cdn.fotofits.com/petzlover/gallery/img/l/pomeranian-887850.jpg',
+        'https://th.bing.com/th/id/R.26ab931a8dc4081da4ce0edcc22deeb1?rik=HWfanOA6qpF5DQ&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f43100000%2fcute-puppy-dogs-43117550-736-736.jpg&ehk=oNvFFrAXwIytGZL5SPx0V95EWpHGAi48IJelRlOuKMo%3d&risl=&pid=ImgRaw&r=0'
+        // Add more image URLs as needed
+      ];
+    
+      // Number of images per page
+      const imagesPerPage = 4;
+    
+      // Function to display images for a given page
+      function displayImages(page) {
+        const startIndex = (page - 1) * imagesPerPage;
+        const endIndex = startIndex + imagesPerPage;
+        const container = document.getElementById('imageContainer');
+        container.innerHTML = '';
+        for (let i = startIndex; i < endIndex && i < images.length; i++) {
+          const colDiv = document.createElement('div');
+          colDiv.className = 'col-sm-6 col-md-4 col-lg-3';
+          const img = document.createElement('img');
+          img.src = images[i];
+          img.alt = `Image ${i + 1}`;
+          img.className = 'img-fluid';
+          colDiv.appendChild(img);
+          container.appendChild(colDiv);
+        }
+      }
+    
+      // Function to generate pagination links
+      function generatePagination() {
+        const totalPages = Math.ceil(images.length / imagesPerPage);
+        const paginationContainer = document.getElementById('paginationContainer');
+        paginationContainer.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+          const li = document.createElement('li');
+          li.className = 'page-item';
+          const link = document.createElement('a');
+          link.className = 'page-link';
+          link.href = '#';
+          link.textContent = i;
+          link.addEventListener('click', () => {
+            displayImages(i);
+            const activeLink = document.querySelector('.pagination .active');
+            if (activeLink) {
+              activeLink.classList.remove('active');
+            }
+            li.classList.add('active');
+          });
+          li.appendChild(link);
+          paginationContainer.appendChild(li);
+        }
+        paginationContainer.firstChild.classList.add('active');
+      }
+    
+      // Display initial images and pagination
+      displayImages(1);
+      generatePagination();
+    </script>
+
+    <!--Images End-->>
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>A little facts about myself.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span>Nickname</span>
+              <p>Belle</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span >Hobby</span>
+              <p>Reading</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span>Food</span>
+              <p>Shrimp</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span>Place</span>
+              <p>Italy</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Skill's about myself.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Cooking <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Sports <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Singing <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Dancing <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Academics <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Editing <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Larra Vel Edradan</h4>
+              <p><em>An 18 years old enthusiast eager to dive deeper into the realm of technology and innovation.</em></p>
+              <ul>
+                <li>Purok 1-A Brgy. San Juan, S.C, SDN, Ph</li>
+                <li>09121998909</li>
+                <li>edradanlarra@gmail.com</li>
+              </ul>
+            </div>
+
+           <div class="col-lg-6">
+    <h3 class="resume-title">Education</h3>
+    <div class="resume-item">
+        <h4>Surigao del Norte State University</h4>
+        <h5>2023 - Present</h5>
+        <p><em>Narciso St. Surigao City, Surigao del Norte</em></p>
+        <p>Currently pursuing studies in Information Technology</p>
+    </div>
+    <div class="resume-item">
+        <h4>Surigao del Norte National High School</h4>
+        <h5>2022 - 2023</h5>
+        <p><em>Peñaranda St. Surigao City, Surigao del Norte</em></p>
+        <p>Senior High School Graduate</p>
+    </div>
+    <div class="resume-item">
+        <h4>Surigao City National High School</h4>
+        <h5>2017 - 2022</h5>
+        <p><em>San Juan, Surigao City, Surigao del Norte</em></p>
+        <p>Junior High School Graduate</p>
+    </div>
+    <div class="resume-item">
+        <h4>Surigao West Central Elementary School</h4>
+        <h5>2011 - 2017</h5>
+        <p><em>San Juan, Surigao City, Surigao del Norte</em></p>
+        <p>Elementary School Graduate</p>
+    </div>
+</div>
+<div class="col-lg-6">
+    <h3 class="resume-title">Career Objective</h3>
+    <p>To gain knowledge and skills in IT that will help me succeed in the industry.</p>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section id="chart" class="chart">
+  <div class="container">
+    <div class="section-title">
+      <h2>Chart</h2>
+      <p>This is my everyday expenses in each day.</p>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <canvas id="myChart" width="500" height="200"></canvas>
+      </div>
+    </div>
+
+    <!-- Dropdown menu for chart type selection -->
+    <div class="row mt-3">
+      <div class="col">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="chartTypeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Chart Type
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="chartTypeDropdown">
+            <li><a class="dropdown-item text-success" onclick="changeChartType('bar')">Bar Chart</a></li>
+            <li><a class="dropdown-item text-success" onclick="changeChartType('line')">Line Chart</a></li>
+            <li><a class="dropdown-item text-success" onclick="changeChartType('pie')">Pie Chart</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Chart Section -->
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script>
+  // Initial chart type
+  let chartType = 'bar';
+  let myChart; // Variable to store chart instance
+
+  // Function to change chart type
+  function changeChartType(type) {
+    chartType = type;
+    updateChart();
+  }
+
+  // Function to generate random colors
+  function generateRandomColors(count) {
+    const colors = [];
+    for (let i = 0; i < count; i++) {
+      const color = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.2)`;
+      colors.push(color);
+    }
+    return colors;
+  }
+
+  // Function to update the chart based on the selected type
+  function updateChart() {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const data = {
+      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'June', 'Saturday', 'Sunday'],
+      datasets: [{
+        label: 'Expenses',
+        data: [65, 59, 80, 81, 56, 55, 40],
+        backgroundColor: generateRandomColors(7), // Generate random colors for each label
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1
+      }]
+    };
+
+    const options = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Destroy the previous chart instance if exists
+    if (myChart) {
+      myChart.destroy();
+    }
+
+    // Create new chart instance
+    myChart = new Chart(ctx, {
+      type: chartType,
+      data: data,
+      options: options
+    });
+  }
+
+  // Initial chart rendering
+  updateChart();
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- ======= Lab Activities Section ======= -->
+<section id="lab-activities" class="lab-activities">
+  <div class="container">
+    <div class="section-title">
+      <h2>Lab Activities</h2>
+      <p>This is a list of your lab activities.</p>
+    </div>
+
+    <ul>
+      <li>Midterm Lab:
+      <li>Lab 1: <a href="./lab1/lab1.html">Lab 1</a></li>
+      <li>Lab 2: <a href="./lab2/lab2.html">Lab 2</a></li>
+      <li>Lab 3: <a href="./lab3/lab3.html">Lab 3</a></li>
+      <li>Lab 4: <a href="./lab4/enhancements.html">Lab 4</a></li>
+      <li>Midterm Exam: <a href="./midterm exam/index.html">Midterm Exam</a></li>
+      <li>Final Lab: 
+        <ul>
+          <li>Lab 5, 6 and 7: <a href="./lab57/lab57.html">Lab 5, 6, and 7</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+ <!-- ======= Table ======= -->
+<section id="table" class="chart section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Table</h2>
+      <p>This is the members of our family.</p>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .row-1 {
+            background-color: #e3f4e1; /* Light Green */
+        }
+        .row-2 {
+            background-color: #eef5ff; /* Light Blue */
+        }
+        .row-3 {
+            background-color: #ffe6ee; /* Light Pink */
+        }
+        .row-4 {
+            background-color: #ffebcc; /* Light Orange */
+        }
+        .btn {
+            background-color: #ff80ab; /* Pink */
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff6699; /* Lighter Pink */
+        }
+        .tooltip {
+            position: relative;
+            display: none;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #ff80ab; /* Pink */
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: calc(100% + 5px); /* Adjusted left property */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip.show .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row-1">
+            <td>Noel B. Edradan</td>
+            <td>40</td>
+            <td>Philippines</td>
+        </tr>
+        <tr class="row-2">
+            <td>Desiree E. Edradan</td>
+            <td>39</td>
+            <td>Philippines</td>
+        </tr>
+        <tr class="row-3">
+            <td>Larra Vel E. Edradan</td>
+            <td>18</td>
+            <td>Philippines</td>
+        </tr>
+        <tr class="row-4">
+            <td>Enzoe E. Edradan</td>
+            <td>15</td>
+            <td>Philippines</td>
+        </tr>
+    </tbody>
+</table>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Larra Vel Edradan">Hover over me!</button>
+
+<script>
+    document.querySelector('.btn').addEventListener('click', function() {
+        document.getElementById('tooltip').classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
+
+   <section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="row">
+      <!-- Contact Information -->
+      <div class="col-lg-6">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>Purok 1-A Brgy. San Juan, S.C., SDN, Philippines</p>
+          </div>
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>09121998909</p>
+          </div>
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>ledradan06@ssct.edu.ph.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Information -->
+
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Form -->
+    </div>
+  </div>
+</section>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Larra Vel Edradan</h3>
+      <p>“The future belongs to those who believe in the beauty of their dreams.”</p>
+      <div class="social-links">
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <div class="copyright">
+        &copy; Copyright <strong><span>MyPortfolio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
